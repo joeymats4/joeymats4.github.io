@@ -223,29 +223,60 @@
       <div class="row">
         <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
 
-          <img src="images/your-new-project-image.png" alt="Image of your project" class="img-fluid">
+          <img src="images/Screenshot 2026-03-09 211549.png" alt="Image of your project" class="img-fluid">
 
         </div>
         <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
           <div class="mb-4">
-            <h3>Your Project Title Here</h3>
+            <h3>Elevator Design</h3>
             <p>
-              <strong>Description:</strong> Describe the overall purpose and goals of your project here.
+              The purpose of this project was to practice skills such as working with a
+              team member using gitHub, following OOP pillars, clean coding practices, project design
+              using UML, and TDD or test driven development. These skills particularly using gitHub with
+              a team member and clean coding are going to be vital in a workplace setting when you are
+              coordinating large code bases with many people.
+
             </p>
             <p>
-              <strong>Functional Requirements:</strong> Outline the key functional requirements of your project here.
+              The key functional requirements for this project were the creation of four different elevators:
+              Standard which was the basic elevator, Freight which could only have one person in the elevator at
+              a time, Pent House which could only go between the first and top floor, and Express which could only
+              go to ground and the upper half of floors. Another aspect was the creation of calls which contained
+              the pickup and drop off floor for the elevators. We also had to create a simple and complex scheduler.
+              The simple scheduler would assign the call to the first elevator that could accept, complex would take
+              into account how long it would take an elevator to accept the call and pick the shortest one. Finally, we
+              had to create a simulator which would run the simulation of elevators based of an existing CSV file of
+              calls.
             </p>
             <p>
-              <strong>Project Design:</strong> Describe the architecture, design patterns, and overall structure of your project here.
+              The structure of our project we decided to use abstract classes for scheduler and elevator as each
+              had multiple versions and shared many of the same methods and fields. In order to handle the direction
+              that these elevators are going we created an Enumerated type direction. Within the PSVM we put the
+              logic to run the simulation as well as methods to read in calls. The calls were formatted in CSV files
+              making the reading in simple. We came up with this design in order to properly follow the four pillars
+              of OOP. We followed SRP by creating the building class which contained all of our elevators and allowed
+              us to keep logic separate from simulator. We followed open closed principal by creating abstract classes
+              for both Elevator and Scheduler which extend to their variations. We followed Liskov by making sure that
+              none of our child classes objects could break the parent class. For interface segregation we made it so
+              there are only useful methods within our abstract classes and nothing that child classes do not use.
             </p>
             <p>
-              <strong>Implementation:</strong> Explain how you built the project, the technologies used, and any notable implementation details here.
+              We built this project in Java using Intellij as our IDE as well as GitHub. The parts that I worked on
+              were call, scheduler, and simulator. For both call and scheduler I used TDD or test driven development
+              to create the methods that we had described in our UML diagram, then as needed I would add helper methods
+              to make sure that everything worked well and followed SRP. Towards the end when both me and my partner
+              had finished our respective parts of the code we met up and did pair programming to fix the last couple
+              of bugs that arose when putting all of our different aspects together.
             </p>
             <p>
-              <strong>What I Learned:</strong> Reflect on the skills, concepts, and lessons you gained from working on this project here.
+              I learned a lot of different things while working on this project but the main skills that I honed were
+              working with a partner on GitHub and TDD. Working with a partner for this was great experience as there
+              were many branches, pull requests, and code reviews to do, all which gave valuable experience. TDD was
+              also great to get experience in and was a challenge. It made me think in a completely different way then
+              I normally do when coding and was a great insight to how things are done in the real world.
             </p>
             <p>
-              <a href="#" target="_blank" rel="noopener noreferrer">Repository link</a>
+              <a href="https://github.com/usd-comp-305/project-03-elevator-joe-and-christian" target="_blank" rel="noopener noreferrer">Repository link</a>
             </p>
           </div>
         </div>
