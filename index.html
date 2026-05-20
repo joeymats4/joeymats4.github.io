@@ -282,6 +282,58 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+
+          <img src="images/Screenshot 2026-05-19 211638.png" alt="Image of Terminal Casino project" class="img-fluid">
+
+        </div>
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4">
+            <h3>Terminal Casino</h3>
+            <p>
+              The motivation of this project was that we thought it would be fun and interesting to create a virtual casino.
+              Projects that you already have an interest in allow you to get deeper into the actual design and make it so
+              that you spend more time and effort making sure that the project is successful and top-notch. It was also a
+              great way to practice certain design patterns and deal with following preexisting logic in the form of different
+              table games. Following previously existing logic gave us a taste of working in the real world where we will be
+              implementing code off of preexisting code and logic.
+            </p>
+            <p>
+              The functional requirements for this project are for the user to have the ability to play any of five different
+              games: Blackjack, Craps, Slots, Baccarat, and Roulette. Each of these games has its own implementation and logic
+              based on its real life corresponding game. We also wanted to have balance be consistent throughout all of the games,
+              just like in a real casino. This means that if you lose 10 dollars in blackjack and then switch to craps, your
+              balance is still 10 dollars lower and did not reset by changing games.
+            </p>
+            <p>
+              We came up with the design for the project by working backwards from what we knew the end goal was. We knew that
+              all of the games were separate but had a similar overall structure, so we created a game interface that all five
+              of our games implemented. We also knew that some games would share more behavior than others, such as Baccarat
+              and Blackjack, because they both used a deck of cards. Because of this, we created a separate class called deck
+              of cards, which used custom made card objects to properly share the behavior needed by Baccarat and Blackjack.
+              We also knew that all of these games had to be accessible from one another and share a balance, so we created
+              the class casino. This acted as a sort of simulator which kept track of the balance and let you switch from one
+              game to another. For casino, we decided to use a factory design pattern, which created the instances of each of
+              our games depending on which game the user wanted to play.
+            </p>
+            <p>
+              For this project, what I specifically worked on was Blackjack and deck of cards. For this project, I decided to
+              have a slightly simpler version of Blackjack in which you can only split once, and you can not double down after
+              splitting. This was in order to minimize the logic needed to implement properly. For the structure of Blackjack
+              itself, I created it using a combination of test driven development and working through the game as it is played.
+              To explain further, I would work my way through the game, and any time I had to create a new method or behavior,
+              I would write the test for it, write the actual code, then move on to the next step of the game. For example, I
+              got to the point where I needed to deal the starting hand, I created the tests, then the methods for it, after
+              that, I would move on to my next step in the game, calculating the user's total, and repeat the process again.
+              The implementation for deck of cards was very different, as instead of thinking my way through a game, I had to
+              think about what choices would allow me to best use this in Baccarat and Blackjack. While I still used test
+              driven development, the difficulty here was more in thinking about how I can set myself up for the best success.
+            </p>
+          </div>
+        </div>
+      </div>
+
 
 
 
